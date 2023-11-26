@@ -1,0 +1,773 @@
+HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GAMERS EMPORIUM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="/branding logo.png">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="/branding logo.png" class="brand-logo" />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="#">Discover</a></li>
+        <li class="nav-items"><a href="#">Browse</a></li>
+        <li class="nav-items"><a href="#">News</a></li>
+        <li class="nav-items"><a href="#">Support</a></li>
+      </ul>
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="search" />
+        <button class="sub-btn">Premium</button>
+        <a href="" class="login-link">Login</a>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- <div class="slider">
+          <div class="slide-content">
+            <h1 class="movie-title">Loki</h1>
+            <p class="movie-des">
+              loki, wdawdf erfadaf jfyga fsrg awegtgrfv ,sfafaefe ,efawrfggsd
+              fvtftyf fvty
+            </p>
+          </div>
+          <img src="images/slider 1.png" />
+        </div> -->
+      </div>
+    </div>
+    <div class="video-card-container">
+      <div class="video-card">
+        <img src="images/rockstar2.png" class="video-card-image" />
+        <video src="videos/rockstar.mp4" muted loop class="card-video"></video>
+      </div>
+      <div class="video-card">
+        <img src="/images/Activision 3d Animated Logo.jpg" class="video-card-image" />
+        <video src="videos/Activision Logo.mp4" muted loop class="card-video"></video>
+      </div>
+      <div class="video-card">
+        <img src="images/Ubisoft CEO Predicts End of Games Consoles.jpg" class="video-card-image" />
+        <video src="videos/Ubisoft Logo - Intro.mp4" muted loop class="card-video"></video>
+      </div>
+      <div class="video-card">
+        <img src="images/image_processing20220509-3338-1691ik8.gif" class="video-card-image" />
+        <video src="videos/Electronic Arts (EA) logo (NFS Most Wanted 2005).mp4" muted loop class="card-video"></video>
+      </div>
+      <div class="video-card">
+        <img src="images/Untitled design.png" class="video-card-image" />
+        <video
+          src="videos/Gameloft Intro HD.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+    </div>
+    <h1 class="title">Recommended For You</h1>
+    <div class="movies-list">
+      <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
+      <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/1.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Half-Life: Alyx</h2>
+            <h6 class="des">Valve’s first Half-Life game in 13 years</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/2.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">The Witcher 3: Wild Hunt</h2>
+            <h6 class="des">Lengthy RPGs are a staple of PC gaming.</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/3.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">XCOM 2</h2>
+            <h6 class="des">XCOM 2 builds on the brilliant, high-stakes tactical combat</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/4.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Disco Elysium</h2>
+            <h6 class="des">Disco Elysium took age-old CRPG mechanics.</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/5.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Elden Ring</h2>
+            <h6 class="des">Elden Ring truly is a monumental achievement.</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/6.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Crusader Kings 3</h2>
+            <h6 class="des">
+              Be it overwhelming military might.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/7.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Hollow Knight</h2>
+            <h6 class="des">
+              Hollow Knight is one of the best modern Metroidvania’s.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/8.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Outer Wilds</h2>
+            <h6 class="des">
+              you live through those same 22 minutes.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/9.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Hades</h2>
+            <h6 class="des">
+              Hades is the current gold standard of the roguelite genre.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/10.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Final Fantasy XIV Online</h2>
+            <h6 class="des">
+             FFXIV has slowly morphed from a relatively generic
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/11.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Divinity: Original Sin 2 - Definitive Edition</h2>
+            <h6 class="des">
+
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/12.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Apex: Legends</h2>
+            <h6 class="des"> 
+
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="title">Popular</h1>
+    <div class="movies-list">
+      <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
+      <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/13.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">GAME OVER ! TSHIRTS</h2>
+            <h6 class="des"></h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/14.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">BLACK PANTHER TSHIRTS</h2>
+            <h6 class="des">
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/15.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">PS5</h2>
+            <h6 class="des">
+              The PlayStation 5 boasts Gaming Experience
+            </h6>
+            <button class="watchlist-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/16.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Gaming Keyboards</h2>
+            <h6 class="des">
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/17.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Gaming Mouses</h2>
+            <h6 class="des">
+              Joe Gardner is a middle school teacher with a love for jazz music.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/18.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">God of War RAGANAROK</h2>
+            <h6 class="des">
+              God of War RAGANAROK made a huge impact.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/19.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Slay the Spire</h2>
+            <h6 class="des">
+              Slay The Spire's constantly changing decks.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/20.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">FTL: Faster Than Light</h2>
+            <h6 class="des">
+              It's a game you shouldn't expect to survive.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/21.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name"> Forza Horizon 5
+            </h2>
+            <h6 class="des">
+              Forza Horizon 5 is truly special.
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/22.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Grand Theft Auto 5 / GTA Online</h2>
+            <h6 class="des">
+              yet meticulously detailed map
+            </h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/23.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Genshin Impact</h2>
+            <h6 class="des">most impressive free-to-play game.</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/24.jpg" class="card-img" />
+          <div class="card-body">
+            <h2 class="name">Red Dead Redemption 2</h2>
+            <h6 class="des">The marvelous PC port overhauled.</h6>
+            <button class="watchlist-btn">add to yout cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js" async></script>
+  </body>
+</html>
+
+CSS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #000000;
+  position: relative;
+  font-family: roboto, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  background: #000000;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 70px;
+}
+
+.nav-links {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.right-container {
+  display: block;
+  margin-left: auto;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: #ffffff;
+  width: 250px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.search-box:focus {
+  width: 400px;
+  border-color: #e01f1f;
+}
+
+.sub-btn {
+  background: #fbc223;
+  height: 30px;
+  cursor: pointer;
+  padding: 0 20px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 10px;
+}
+.sub-btn:hover{
+  transform: scale(1.1);
+}
+
+.login-link {
+  color: rgb(255, 0, 0);
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  padding: 20px 0;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.carousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slider {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+
+.slide-content {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.805) 80%, rgba(30, 11, 11, 0.07));
+  color: #ffffff;
+}
+
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 100px;
+}
+
+.movie-des {
+  width: 80%;
+  line-height: 30px;
+  padding-left: 50px;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+.video-card-container {
+  position: relative;
+  width: 92%;
+  margin: auto;
+  height: 10vw;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.video-card {
+  position: relative;
+  min-width: calc(100% / 5 - 10px);
+  width: calc(100% / 5 -10px);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #030b17;
+}
+
+.video-card-image,
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-video {
+  position: absolute;
+}
+
+.video-card:hover .video-card-image {
+  display: none;
+}
+
+.title {
+  color: white;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card-container {
+  position: relative;
+  width: 92%;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 60%;
+}
+
+.des {
+  color: #ffffff;
+  opacity: 0.8;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+.watchlist-btn {
+  position: relative;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 500;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.watchlist-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 35px;
+  width: 35px;
+  background-image: url(images/add.png);
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pre-btn,
+.nxt-btn {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pre-btn {
+  left: 0;
+  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn {
+  right: 0;
+  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+JAVA SCRIPT 
+
+let movies = [
+  {
+    name: "GTA VI",
+    des:
+      "GTA 6 is still something of a mystery. Here's everything we know about the game so far, including a look at the initial announcement.",
+    image: "images/gta61.jpg"
+  },
+  {
+    name: "Call of Duty: Modern Warfare 3",
+    des:
+      "Call of Duty®: Modern Warfare® III is the direct sequel to the record-breaking Call of Duty®: Modern Warfare® II. Captain Price and Task Force 141 face off against the ultimate threat. The ultranationalist war criminal Vladimir Makarov is extending his grasp across the world causing Task Force 141 to fight like never before.",
+    image: "images/CODM3.jpeg"
+  },
+  {
+    name: "EA SPORTS FC™ 24",
+    des:
+      "EA SPORTS FC™ 24 welcomes you to The World’s Game—the most true-to-football experience ever with HyperMotionV*, PlayStyles optimised by Opta, and a revolutionised Frostbite™ Engine reinventing how 19,000+ authentic players move, play and look in every match.",
+    image: "images/fc24.jpeg"
+  },
+  {
+    name: "Spider-Man 2",
+    des:
+      "Marvel's Spider-Man 2 is a 2023 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment.. ",
+    image: "images/sp2.jpg"
+  },
+  {
+    name: "Alan Wake II",
+    des:
+      "Alan Wake 2 is a 2023 survival horror game developed by Remedy Entertainment and published by Epic Games Publishing.",
+    image: "images/aw2.jpg"
+  }
+];
+const carousel = document.querySelector(".carousel");
+let sliders = [];
+
+let slideIndex = 0;
+
+const createSlide = () => {
+  if (slideIndex >= movies.length) {
+    slideIndex = 0;
+  }
+
+  let slide = document.createElement("div");
+  var imgElement = document.createElement("img");
+  let content = document.createElement("div");
+  let h1 = document.createElement("h1");
+  let p = document.createElement("p");
+
+  imgElement.appendChild(document.createTextNode(""));
+  h1.appendChild(document.createTextNode(movies[slideIndex].name));
+  p.appendChild(document.createTextNode(movies[slideIndex].des));
+  content.appendChild(h1);
+  content.appendChild(p);
+  slide.appendChild(content);
+  slide.appendChild(imgElement);
+  carousel.appendChild(slide);
+
+  imgElement.src = movies[slideIndex].image;
+  slideIndex++;
+
+  slide.className = "slider";
+  content.className = "slide-content";
+  h1.className = "movie-title";
+  p.className = "movie-des";
+
+  sliders.push(slide);
+
+  if (sliders.length) {
+    sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${
+      30 * (sliders.length - 2)
+    }px)`;
+  }
+};
+
+for (let i = 0; i < 3; i++) {
+  createSlide();
+}
+
+setInterval(() => {
+  createSlide();
+}, 3000);
+
+//video cards
+
+const videoCards = [...document.querySelectorAll(".video-card")];
+
+videoCards.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    let video = item.children[1];
+    video.play();
+  });
+  item.addEventListener("mouseleave", () => {
+    let video = item.children[1];
+    video.pause();
+  });
+});
+
+//card sliders
+
+let cardContainers = [...document.querySelectorAll(".card-container")];
+let preBtns = [...document.querySelectorAll(".pre-btn")];
+let nxtBtns = [...document.querySelectorAll(".nxt-btn")];
+
+cardContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nxtBtns[i].addEventListener("click", () => {
+    item.scrollLeft += containerWidth - 200;
+  });
+
+  preBtns[i].addEventListener("click", () => {
+    item.scrollLeft -= containerWidth + 200;
+  });
+});
