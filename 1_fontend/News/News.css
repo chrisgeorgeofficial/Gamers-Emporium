@@ -22,6 +22,7 @@
     z-index: 9;
     display: flex;
     align-items: center;
+    z-index: 1;
   }
   
   .brand-logo {
@@ -41,7 +42,7 @@
     text-transform: capitalize;
     color: #ffffff;
     opacity: 0.9;
-    
+    font-size: 17px;
   }
   a:hover {
     color: #e01f1f;
@@ -184,6 +185,10 @@
 .btn-news.btn-contests a:hover {
     color: red;
 }
-.total{
-    padding-top: 100px;
+.container{
+    padding-top: 50px;
+    z-index: 0;
+}
+.nav-items{
+    padding-top: 10px;
 }
