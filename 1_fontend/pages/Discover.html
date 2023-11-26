@@ -16,7 +16,7 @@
     <img src="/1_fontend/brand logo/branding logo.png" class="brand-logo" onclick="location.href = '/1_fontend/index.html'";/>
     <ul class="nav-links">
       <li class="nav-items"><a href="#"><span class="span1">Discover</span></a></li>
-      <li class="nav-items"><a href="#">Browse</a></li>
+      <li class="nav-items"><a href="/1_fontend//pages/Browse.html">Browse</a></li>
       <li class="nav-items"><a href="#">News</a></li>
       <li class="nav-items"><a href="/1_fontend/contactpage/contact.html">Support</a></li>
     </ul>
@@ -29,8 +29,8 @@
   <div class="movie-list-total">
     <h1 class="title">New Releases</h1>
      <div class="movies-list">
-     <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
-     <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+     <button class="pre-btn" title="btn"><img src="/1_fontend/images/pre.png" /></button>
+     <button class="nxt-btn" title="btn"><img src="/1_fontend/images/nxt.png" /></button>
      <div class="card-container">
       <div class="card">
         <img src="images/1.jpg" class="card-img" />
@@ -146,8 +146,8 @@
   </div>
   <h1 class="title">Upcoming Releases</h1>
   <div class="movies-list">
-    <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
-    <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+    <button class="pre-btn" title="btn"><img src="/1_fontend//images/pre.png" /></button>
+    <button class="nxt-btn" title="btn"><img src="/1_fontend/images/nxt.png" /></button>
     <div class="card-container">
       <div class="card">
         <img src="images/13.jpg" class="card-img" />
@@ -265,6 +265,22 @@
     </div>
   </div>
   </div>
-  <script src="/1_fontend/index.js" async></script>
+  <script  async>let cardContainers = [...document.querySelectorAll(".card-container")];
+    let preBtns = [...document.querySelectorAll(".pre-btn")];
+    let nxtBtns = [...document.querySelectorAll(".nxt-btn")];
+    
+    cardContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+    
+      nxtBtns[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth - 200;
+      });
+    
+      preBtns[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth + 200;
+      });
+    });
+    </script>
 </body>
 </html>
