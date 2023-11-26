@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.wrapper {
+	font-family: Montserrat;
+	background: #000000;
+}
+
+.outer {
+	position: relative;
+	background: rgb(0, 0, 0)040;
+	height: 900px;
+	width: 1400px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+img {
+	position: absolute;
+	top: 0px;
+	right: -20px;
+	z-index: 0;
+	animation-delay: 0.5s;
+}
+
+.content {
+	animation-delay: 0.3s;
+	position: absolute;
+	left: 150px;
+	z-index: 3	
+}
+
+h1 {
+	color: darkgreen;
+}
+
+p {
+	width: 400px;
+	font-size: 30px;
+	line-height: 1.4;
+	color: #aaa;
+	margin: 20px 0;
+	
+}
+
+.bg {
+	display: inline-block;
+	color: white;
+	background: red;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: 20px;
+}
+.button {
+	width: fit-content;
+	height: fit-content;
+	margin-top: 10px;
+	
+}
+
+.button a {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 1px solid #aaa;
+	font-weight: bold;
+	
+	
+}
+
+.button a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -10px;
+	width: 0%;
+	background: red;
+	height: 100%;
+	z-index: -1;
+	transition: width 0.3s ease-in-out;
+	transform: skew(-25deg);
+	transform-origin: right;
+}
+
+.button a:hover:after {
+	width: 150%;
+	left: -10px;
+	transform-origin: left;
+	
+}
+
+.button a:hover {
+	color: red;
+	transition: all 0.5s ease;
+}
+
+
+.button a:nth-of-type(1) {
+	border-radius: 50px 0 0 50px;
+	border-right: none;
+}
+
+.button a:nth-of-type(2) {
+	border-radius: 0px 50px 50px 0;
+}
+
+.cart-icon {
+	padding-right: 8px;
+	
+}
+
+/*.footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}*\
