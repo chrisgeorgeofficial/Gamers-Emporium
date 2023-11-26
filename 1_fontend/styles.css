@@ -26,6 +26,7 @@ body {
 
 .brand-logo {
   height: 70px;
+  cursor: pointer;
 }
 
 .nav-links {
