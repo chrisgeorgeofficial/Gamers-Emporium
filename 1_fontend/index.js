@@ -113,3 +113,19 @@ cardContainers.forEach((item, i) => {
     item.scrollLeft -= containerWidth + 200;
   });
 });
+
+function redirect1(){
+  location.replace("https://www.rockstargames.com")
+    }
+function redirect2(){
+  location.replace("https://www.activision.com/?utm_source=404&utm_medium=redirect&utm_campaign=122222")
+    }
+function redirect3(){
+  location.replace("https://www.ubisoft.com/en-gb")
+    }
+function redirect4(){
+  location.replace("https://www.ea.com/en-gb")
+    }
+function redirect5(){
+  location.replace("https://www.gameloft.com")
+    }
