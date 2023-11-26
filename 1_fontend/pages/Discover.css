@@ -205,7 +205,7 @@
     left: -5px;
     height: 35px;
     width: 35px;
-    background-image: url(images/add.png);
+    background-image: url(/1_fontend/images/add.png);
     background-size: cover;
     transform: scale(0.4);
   }
