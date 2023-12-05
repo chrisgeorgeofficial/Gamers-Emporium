@@ -49,6 +49,8 @@ a:hover {
 .right-container {
   display: block;
   margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .search-box {
@@ -88,6 +90,14 @@ a:hover {
 }
 
 .login-link {
+  color: rgb(255, 0, 0);
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.user-link {
   color: rgb(255, 0, 0);
   opacity: 0.9;
   font-size: 15px;

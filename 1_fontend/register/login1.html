@@ -43,8 +43,10 @@
 <script>
     //alert and redirect to home page
 function login() {
-   location.href = '/1_fontend/index.html'
+   //location.href = '/1_fontend/index.html'
+   localStorage.setItem('isLoggedIn','true')
     alert("Login Sucessfull ");
+    window.location.href ='/1_fontend/index.html'
   }
 </script>
 </body>
