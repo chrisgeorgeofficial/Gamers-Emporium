@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="icon" href="brand logo/branding logo.png">
+  <style>
+    #userIcon {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,7 +28,8 @@
     <div class="right-container">
       <input type="text" class="search-box" placeholder="search" />
       <button class="sub-btn">Premium</button>
-      <a href="register/login1.html" class="login-link">Login</a>
+      <a  class="login-link" id="loginButton" onclick="redirectToLogin()">Login</a>
+      <a href="register/login1.html" class="login-link" id="userIcon">user</a>
     </div>
   </div>
 
@@ -303,6 +309,15 @@
   </div>
 
   <script src="index.js" async>
+  </script>
+  <script>
+    function redirectToLogin() {
+      window.location.href = "register/login1.html";
+    }
+    if(localStorage.getItem('isLoggedIn') == 'true') {
+      document.getElementById('loginButton').style.display = 'none';
+      document.getElementById('userIcon').style.display ='block';
+    }
   </script>
 </body>
 
