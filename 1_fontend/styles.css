@@ -96,6 +96,7 @@ a:hover {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  padding-top: 7px;
 }
 .user-link {
   color: rgb(255, 0, 0);
