@@ -29,7 +29,7 @@
       <input type="text" class="search-box" placeholder="search" />
       <button class="sub-btn">Premium</button>
       <a  class="login-link" id="loginButton" onclick="redirectToLogin()">Login</a>
-      <a href="register/login1.html" class="user-link" id="userIcon">user</a>
+      <a class="user-link" id="userIcon" onclick="redirectToUser()">user</a>
     </div>
   </div>
 
@@ -317,6 +317,13 @@
     if(localStorage.getItem('isLoggedIn') == 'true') {
       document.getElementById('loginButton').style.display = 'none';
       document.getElementById('userIcon').style.display ='block';
+    }
+    if(localStorage.getItem('isLoggedIn') == 'false') {
+      document.getElementById('loginButton').style.display = 'block';
+      document.getElementById('userIcon').style.display ='none';
+    }
+    function redirectToUser() {
+      window.location.href = "pages/userprofile/UserProfile.html";
     }
   </script>
 </body>
