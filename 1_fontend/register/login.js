@@ -25,15 +25,15 @@ db.connect((err) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.get('/login', (req, res) => {
-    res.sendFile(__dirname + '/views/login.html');
+app.get('/login1', (req, res) => {
+    res.sendFile(__dirname + '/register/login.html');
 });
 
-app.post('/login', (req, res) => {
-    const { username, password } = req.body;
+app.post('/login1', (req, res) => {
+    const { email, password } = req.body;
 
     // Check user credentials in MySQL
-    const sql = 'SELECT * FROM users WHERE username = ? AND password = ?';
+    const sql = 'SELECT * FROM users WHERE email = ? AND password = ?';
     db.query(sql, [username, password], (err, result) => {
         if (err) {
             console.error('Error checking user credentials:', err);
@@ -42,6 +42,7 @@ app.post('/login', (req, res) => {
             if (result.length > 0) {
                 console.log('User logged in successfully.');
                 res.send('Login successful!');
+                alert("sucessfull")
             } else {
                 console.log('Invalid credentials.');
                 res.send('Invalid credentials. Login failed.');

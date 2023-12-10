@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/1_fontend/register/register.html', (req, res) => {
-    const { username, password, email, phonenumber } = req.body;
+    const { username, phonenumber, email, password } = req.body;
 
 // if (!username || !password || !email || !phonenumber) {
 //     // Handle missing data
