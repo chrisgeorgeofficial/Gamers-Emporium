@@ -36,7 +36,7 @@ app.post('/login1', (req, res) => {
 
     // Check user credentials in MySQL
     const sql = 'SELECT * FROM users WHERE email = ? AND password = ?';
-    db.query(sql, [username, password], (err, result) => {
+    db.query(sql, [email, password], (err, result) => {
         if (err) {
             console.error('Error checking user credentials:', err);
             res.send('Error logging in.');
