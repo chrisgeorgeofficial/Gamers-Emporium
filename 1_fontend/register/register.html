@@ -8,7 +8,7 @@
     <section>
     <div class="form-box">
         <div class="form-value"> 
-            <form action="">
+            <form action="/1_fontend/register/register.html" method="post">
                 <h1>
                     Register
                 </h1>
@@ -17,23 +17,23 @@
                 </h2>
                 <div class="inputbox">
                     <ion-icon name="create"></ion-icon>
-                     <input type="name"required>
-                     <label for="">Name</label>
+                     <input type="text" id="username" name="username"  required>
+                     <label for="username">Name</label>
                 </div>
                 <div class="inputbox">
                     <ion-icon name="call"></ion-icon>
-                    <input type="phonenumber"required>
-                    <label for="">Phone Number</label>
+                    <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+                    <label for="phonenumber">Phone Number</label>
                </div>
                <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email"required>
-                <label for="">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
                </div>
                <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password"required>
-                <label for="">Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
                </div>
                <div class="inputbox">
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -43,7 +43,7 @@
                </div>
                <div class="forget">
                </div>
-             <button onclick= "signup()" >Sign Up</button>
+             <button onclick= "signup()" type="submit" >Sign Up</button>
                <div class="register">
                 
                </div>
