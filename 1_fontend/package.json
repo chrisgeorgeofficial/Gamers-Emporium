@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {
