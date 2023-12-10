@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/register.html');
 });
 
-app.post('/1_fontend/register/register.html', (req, res) => {
+app.post('/submit', (req, res) => {
     const { username, phonenumber, email, password } = req.body;
 
 // if (!username || !password || !email || !phonenumber) {
