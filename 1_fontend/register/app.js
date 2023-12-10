@@ -32,8 +32,14 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/register.html');
 });
 
-app.post('/submit', (req, res) => {
-    const { username, phonenumber, email, password } = req.body;
+app.get('/reg', (req, res) => {
+    console.log("entered");
+    // const { username, phonenumber, email, password } = req.body;
+    const username=req.body.username;
+    const phonenumber=req.body.phonenumber;
+    const email=req.body.email;
+    const password=req.body.password;
+
 
 // if (!username || !password || !email || !phonenumber) {
 //     // Handle missing data
@@ -42,7 +48,7 @@ app.post('/submit', (req, res) => {
 // }
     
     // Insert user data into MySQL
-    const sql = 'INSERT INTO users (username, phonenumber, email, password) VALUES (?, ?, ?, ?)';
+    const sql = "insert into gamers_emporium.users(username,phonenumber,email,password) values('"+username+"','"+phonenumber+"','"+email+"','"+password+"');"
     db.query(sql, [username, phonenumber, email, password], (err, result) => {
         if (err) {
             console.error('Error inserting user:', err);

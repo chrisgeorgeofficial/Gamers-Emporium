@@ -8,7 +8,7 @@
     <section>
     <div class="form-box">
         <div class="form-value"> 
-            <form action="/submit" method="post">
+            <form action="/reg" method="get">
                 <h1>
                     Register
                 </h1>
@@ -43,7 +43,8 @@
                </div>
                <div class="forget">
                </div>
-             <button onclick= "signup()" type="submit" >Sign Up</button>
+             <button type="submit" >Sign Up</button>
+             <!-- onclick= "signup()" -->
                <div class="register">
                 
                </div>
@@ -53,12 +54,12 @@
     </section>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
+<!-- <script>
     function signup() {
    location.href = '/1_fontend/index.html'
     alert("Account Created Sucessfully");
   }
-</script>
+</script> -->
 <!-- <script>
     function submitForm() {
     const username = document.getElementById("username").value;
