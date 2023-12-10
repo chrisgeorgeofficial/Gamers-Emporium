@@ -59,7 +59,7 @@
     alert("Account Created Sucessfully");
   }
 </script>
-<script>
+<!-- <script>
     function submitForm() {
     const username = document.getElementById("username").value;
     const phonenumber = document.getElementById("phonenumber").value;
@@ -92,6 +92,43 @@
     const data = JSON.stringify({ username, phonenumber, email, password });
     xhr.send(data);
 }
-</script>
+</script> -->
+<!-- <script>
+    function submitForm() {
+    // Get form data
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Basic validation
+    if (!username || !password) {
+        alert("Please enter both username and password.");
+        return;
+    }
+
+    // Send data to the server using Fetch API
+    fetch("/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error(Error: ${response.status});
+        }
+    })
+    .then(data => {
+        alert(data.message);
+        // Optionally, redirect to another page or perform other actions after successful signup
+    })
+    .catch(error => {
+        console.error("Error:", error.message);
+        alert("An error occurred. Please try again.");
+    });
+}
+</script> -->
 </body>
 </html>
