@@ -3,9 +3,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 5500;
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -22,6 +23,7 @@ db.connect((err) => {
     }
 });
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
@@ -43,6 +45,9 @@ app.post('/login1', (req, res) => {
                 console.log('User logged in successfully.');
                 res.send('Login successful!');
                 alert("sucessfull")
+                localStorage.setItem('isLoggedIn','true');
+                alert("Login Sucessfull ");
+                window.location.href ='/1_fontend/index.html'
             } else {
                 console.log('Invalid credentials.');
                 res.send('Invalid credentials. Login failed.');
