@@ -29,7 +29,7 @@
                 <label for=""></label><input type="checkbox">Remember Me  </label>
                 <label for=""><a href="forgot.html">Forget password?</a></label>  
                </div>
-               <button  type="submit" >Login</button>
+               <button  type="submit" onclick="login()" >Login</button>
                <!-- onclick="login()"; -->
                <div class="register">
                 <p>Don't have a account ?  <a href="register.html">Register</a></p>
@@ -45,7 +45,7 @@
     //alert and redirect to home page
 function login() {
    //location.href = '/1_fontend/index.html'
-   localStorage.setItem('isLoggedIn','true')
+   localStorage.setItem('isLoggedIn','true');
     alert("Login Sucessfull ");
     window.location.href ='/1_fontend/index.html'
   }
