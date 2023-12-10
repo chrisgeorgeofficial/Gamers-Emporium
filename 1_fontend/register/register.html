@@ -59,5 +59,39 @@
     alert("Account Created Sucessfully");
   }
 </script>
+<script>
+    function submitForm() {
+    const username = document.getElementById("username").value;
+    const phonenumber = document.getElementById("phonenumber").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Basic validation
+    if (username === "" || password === "") {
+        alert("Please enter both username and password.");
+        return;
+    }
+
+    // Send data to the server
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "/signup", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            // Handle the response from the server
+            if (xhr.status === 200) {
+                alert(xhr.responseText);
+            } else {
+                alert("Error: " + xhr.status);
+            }
+        }
+    };
+
+    // Send the data as JSON
+    const data = JSON.stringify({ username, phonenumber, email, password });
+    xhr.send(data);
+}
+</script>
 </body>
 </html>
