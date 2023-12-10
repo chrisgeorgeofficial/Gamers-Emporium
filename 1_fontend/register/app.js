@@ -29,12 +29,18 @@ app.use(express.static('public'));
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/1_frontend/register/register.html');
+    res.sendFile(__dirname + '/register.html');
 });
 
 app.post('/1_fontend/register/register.html', (req, res) => {
     const { username, password, email, phonenumber } = req.body;
 
+// if (!username || !password || !email || !phonenumber) {
+//     // Handle missing data
+//     res.status(400).send('Incomplete data provided.');
+//     return;
+// }
+    
     // Insert user data into MySQL
     const sql = 'INSERT INTO users (username, phonenumber, email, password) VALUES (?, ?, ?, ?)';
     db.query(sql, [username, phonenumber, email, password], (err, result) => {
