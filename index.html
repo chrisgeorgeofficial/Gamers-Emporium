@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.3" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GAMERS EMPORIUM</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" href="brand logo/branding logo.png">
+  <style>
+    #userIcon {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="brand logo/branding logo.png" class="brand-logo" onclick="location.href = '/1_fontend/index.html'";/>
+    <ul class="nav-links">
+      <li class="nav-items"><a href="/1_fontend/pages/Discover.html"><span>Discover</span></a></li>
+      <li class="nav-items"><a href="/1_fontend/pages/Browse.html">Browse</a></li>
+      <li class="nav-items"><a href="/1_fontend/News/News.html">News</a></li>
+      <li class="nav-items"><a href="/1_fontend/contactpage/contact.html">Support</a></li>
+    </ul>
+    <div class="right-container">
+      <input type="text" class="search-box" placeholder="search" />
+      <button class="sub-btn">Premium</button>
+      <a  class="login-link" id="loginButton" onclick="redirectToLogin()">Login</a>
+      <i class="user-link"  id="userIcon" onclick="redirectToUser()">user</i>
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <!-- <div class="slider">
+          <div class="slide-content">
+            <h1 class="movie-title">Loki</h1>
+            <p class="movie-des">
+              loki, wdawdf erfadaf jfyga fsrg awegtgrfv ,sfafaefe ,efawrfggsd
+              fvtftyf fvty
+            </p>
+          </div>
+          <img src="images/slider 1.png" />
+        </div> -->
+    </div>
+  </div>
+  <div class="video-card-container">
+    <div class="video-card">
+      <img src="images/rockstar2.png" class="video-card-image" />
+      <video src="videos/rockstar.mp4" muted loop class="card-video" onclick="redirect1()"></video>
+    </div>
+    <div class="video-card">
+      <img src="/1_fontend/images/Activision 3d Animated Logo.jpg" class="video-card-image" />
+      <video src="videos/Activision Logo.mp4" muted loop class="card-video" onclick="redirect2()"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/Ubisoft CEO Predicts End of Games Consoles.jpg" class="video-card-image" />
+      <video src="videos/Ubisoft Logo - Intro.mp4" muted loop class="card-video" onclick="redirect3()"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/image_processing20220509-3338-1691ik8.gif" class="video-card-image" />
+      <video src="videos/Electronic Arts (EA) logo (NFS Most Wanted 2005).mp4" muted loop class="card-video" onclick="redirect4()"></video>
+    </div>
+    <div class="video-card">
+      <img src="images/Untitled design.png" class="video-card-image" />
+      <video src="videos/Gameloft Intro HD.mp4" muted loop class="card-video" onclick="redirect5()"></video>
+    </div>
+  </div>
+  <h1 class="title">Recommended For You</h1>
+  <div class="movies-list">
+    <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
+    <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/1.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Half-Life: Alyx</h2>
+          <h6 class="des">Valve’s first Half-Life game in 13 years</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/2.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">The Witcher 3: Wild Hunt</h2>
+          <h6 class="des">Lengthy RPGs are a staple of PC gaming.</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/3.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">XCOM 2</h2>
+          <h6 class="des">XCOM 2 builds on the brilliant, high-stakes tactical combat</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/4.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Disco Elysium</h2>
+          <h6 class="des">Disco Elysium took age-old CRPG mechanics.</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/5.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Elden Ring</h2>
+          <h6 class="des">Elden Ring truly is a monumental achievement.</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/6.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Crusader Kings 3</h2>
+          <h6 class="des">
+            Be it overwhelming military might.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/7.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Hollow Knight</h2>
+          <h6 class="des">
+            Hollow Knight is one of the best modern Metroidvania’s.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/8.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Outer Wilds</h2>
+          <h6 class="des">
+            you live through those same 22 minutes.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/9.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Hades</h2>
+          <h6 class="des">
+            Hades is the current gold standard of the roguelite genre.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/10.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Final Fantasy XIV Online</h2>
+          <h6 class="des">
+            FFXIV has slowly morphed from a relatively generic
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/11.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Divinity: Original Sin 2 - Definitive Edition</h2>
+          <h6 class="des">
+
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/12.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Apex: Legends</h2>
+          <h6 class="des">
+
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="title">Popular</h1>
+  <div class="movies-list">
+    <button class="pre-btn" title="btn"><img src="images/pre.png" /></button>
+    <button class="nxt-btn" title="btn"><img src="images/nxt.png" /></button>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/13.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">GAME OVER ! TSHIRTS</h2>
+          <h6 class="des"></h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/14.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">BLACK PANTHER TSHIRTS</h2>
+          <h6 class="des">
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/15.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">PS5</h2>
+          <h6 class="des">
+            The PlayStation 5 boasts Gaming Experience
+          </h6>
+          <button class="watchlist-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/16.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Gaming Keyboards</h2>
+          <h6 class="des">
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/17.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Gaming Mouses</h2>
+          <h6 class="des">
+            Joe Gardner is a middle school teacher with a love for jazz music.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/18.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">God of War RAGANAROK</h2>
+          <h6 class="des">
+            God of War RAGANAROK made a huge impact.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/19.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Slay the Spire</h2>
+          <h6 class="des">
+            Slay The Spire's constantly changing decks.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/20.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">FTL: Faster Than Light</h2>
+          <h6 class="des">
+            It's a game you shouldn't expect to survive.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/21.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name"> Forza Horizon 5
+          </h2>
+          <h6 class="des">
+            Forza Horizon 5 is truly special.
+          </h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <a href="/1_fontend/pages/product page/product_gta.html"><img src="images/22.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Grand Theft Auto 5 / GTA Online</h2>
+          <h6 class="des">
+            yet meticulously detailed map
+          </h6>
+        </a>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/23.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Genshin Impact</h2>
+          <h6 class="des">most impressive free-to-play game.</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/24.jpg" class="card-img" />
+        <div class="card-body">
+          <h2 class="name">Red Dead Redemption 2</h2>
+          <h6 class="des">The marvelous PC port overhauled.</h6>
+          <button class="watchlist-btn">add to yout cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" async>
+  </script>
+  <script>
+    function redirectToLogin() {
+      window.location.href = "register/login1.html";
+    }
+    if(localStorage.getItem('isLoggedIn') == 'true') {
+      document.getElementById('loginButton').style.display = 'none';
+      document.getElementById('userIcon').style.display ='block';
+    }
+    if(localStorage.getItem('isLoggedIn') == 'false') {
+      document.getElementById('loginButton').style.display = 'block';
+      document.getElementById('userIcon').style.display ='none';
+    }
+    function redirectToUser() {
+      window.location.href = "pages/userprofile/UserProfile.html";
+    }
+  </script>
+</body>
+
+</html>
